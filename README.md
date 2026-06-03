@@ -12,8 +12,8 @@
 
 ```
 flutter_shop/
-├ pubspec.yaml
-└ lib/
+├── pubspec.yaml
+└── lib/
     ├── main.dart
     ├── models/product.dart
     ├── services/api_service.dart
@@ -40,7 +40,7 @@ flutter_shop/
 
 ## 1️⃣ شاشة الفئات — الحالة الأولى (ملابس نسائية محددة)
 
-![Categories Screen - Women's Clothing](flutter_shop/screenshots/page-01.jpg)
+![Categories Screen - Women's Clothing](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-01.jpg)
 
 > **الوصف:** شاشة الفئات عند اختيار فئة "ملابس نسائية"، تظهر قائمة الفئات على اليسار وشبكة المنتجات على اليمين. المنتجات التي تحمل علامة ✓ خضراء تعني أنها مضافة للسلة.
 
@@ -269,7 +269,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
 ## 2️⃣ شاشة الفئات — الحالة الثانية (إلكترونيات محددة)
 
-![Categories Screen - Electronics](flutter_shop/screenshots/page-02.jpg)
+![Categories Screen - Electronics](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-02.jpg)
 
 > **الوصف:** نفس شاشة الفئات بعد اختيار "إلكترونيات"، يتغير تمييز الفئة ويُعرض شبكة منتجات الإلكترونيات المحملة من API.
 
@@ -304,7 +304,7 @@ Future<List<Product>> fetchProductsByCategory(String category) async {
 
 ## 3️⃣ شاشة الفئات — الحالة الأولية (لم يُختر فئة بعد)
 
-![Categories Screen - Initial State](flutter_shop/screenshots/page-03.jpg)
+![Categories Screen - Initial State](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-03.jpg)
 
 > **الوصف:** الحالة الابتدائية لشاشة الفئات قبل اختيار أي فئة، تظهر الفئات الأربع في الشريط الجانبي، وتظهر رسالة "اختر فئة لعرض المنتجات" على اليمين.
 
@@ -337,7 +337,7 @@ Widget _buildSelectPrompt() {
 
 ## 4️⃣ الشاشة الرئيسية — قسم الملابس النسائية
 
-![Home Screen - Women's Clothing](flutter_shop/screenshots/page-04.jpg)
+![Home Screen - Women's Clothing](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-04.jpg)
 
 > **الوصف:** الشاشة الرئيسية تعرض المنتجات مجمّعة حسب الفئة. يظهر قسم "ملابس نسائية" مع أيقونة القسم ولون مميز. AppBar يحتوي على أيقونة الفئات والمفضلة والسلة مع عداد المنتجات.
 
@@ -681,7 +681,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 ## 5️⃣ الشاشة الرئيسية — قسم الإلكترونيات
 
-![Home Screen - Electronics](flutter_shop/screenshots/page-05.jpg)
+![Home Screen - Electronics](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-05.jpg)
 
 > **الوصف:** نفس الشاشة الرئيسية بعد التمرير لأسفل، يظهر قسم "إلكترونيات" مع لون البنفسجي المميز وأيقونة الحاسب.
 
@@ -884,7 +884,7 @@ class _AddToCartButton extends StatelessWidget {
 
 ## 6️⃣ الشاشة الرئيسية — قسم المجوهرات
 
-![Home Screen - Jewelery](flutter_shop/screenshots/page-06.jpg)
+![Home Screen - Jewelery](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-06.jpg)
 
 > **الوصف:** قسم "مجوهرات" في الشاشة الرئيسية، يظهر المنتج الأول في المفضلة (قلب أحمر) والثاني مضاف للسلة (علامة ✓ خضراء).
 
@@ -992,7 +992,7 @@ class CartProvider with ChangeNotifier {
 
 ## 7️⃣ شاشة تفاصيل المنتج
 
-![Product Details Screen](flutter_shop/screenshots/page-07.jpg)
+![Product Details Screen](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-07.jpg)
 
 > **الوصف:** شاشة تفاصيل المنتج تعرض صورة كبيرة، الفئة، الاسم، السعر، التقييم، الوصف، وزري "تعديل المنتج" و"حذف المنتج". في الأسفل شريط "أضف للسلة" مع مؤشر الكمية الحالية.
 
@@ -1392,7 +1392,7 @@ class _ActionButton extends StatelessWidget {
 
 ## 8️⃣ شاشة السلة
 
-![Cart Screen](flutter_shop/screenshots/page-08.jpg)
+![Cart Screen](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-08.jpg)
 
 > **الوصف:** شاشة السلة تعرض المنتجات المضافة مع الصورة والاسم والسعر وأدوات التحكم بالكمية (+/-) وزر الحذف. في الأسفل ملخص الفاتورة مع الإجمالي وزر "إتمام الطلب".
 
@@ -1788,7 +1788,7 @@ class _QuantityButton extends StatelessWidget {
 
 ## 9️⃣ شاشة إضافة منتج جديد
 
-![Add Product Screen](flutter_shop/screenshots/page-09.jpg)
+![Add Product Screen](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-09.jpg)
 
 > **الوصف:** شاشة إضافة منتج جديد تحتوي على Form كامل بحقول: اسم المنتج، السعر، الوصف، رابط الصورة، والفئة (Dropdown). عند الضغط على الزر يُنفَّذ POST Request للـ API.
 
@@ -2099,7 +2099,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
 
 ## 🔟 الشاشة الرئيسية — قسم الملابس الرجالية
 
-![Home Screen - Men's Clothing](flutter_shop/screenshots/page-10.jpg)
+![Home Screen - Men's Clothing](https://raw.githubusercontent.com/H_amdi/flutter_shop/main/screenshots/page-10.jpg)
 
 > **الوصف:** قسم "ملابس رجالية" في الشاشة الرئيسية مع لون أزرق مميز وأيقونة رجل. المنتج الأول مضاف للسلة (عداد = 1 في AppBar).
 
